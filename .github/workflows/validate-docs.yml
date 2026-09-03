@@ -7,3 +7,25 @@ on:
   branches: [ "main" ] 
   
 jobs:
+ check-docs:
+  runs-on: ubuntu-latest
+  steps:
+   - name: Checkout Repository
+     uses: actions/checkout@v4
+     
+   - name: Verify /docs directory and files
+     run: |           
+       if [ ! -d "docs" ]; then             
+         echo "Error: 'docs' directory is missing."             
+         exit 1           
+       fi           
+       cd docs           
+       if ! ls *.sql 1> /dev/null 2>&1; then 
+         echo "Missing SQL script"; 
+         exit 1; 
+       fi           
+       if ! ls *.md 1> /dev/null 2>&1 && ! ls *.pdf 1> /dev/null 2>&1; then 
+         echo "Missing planning files"; 
+         exit 1; 
+       fi           
+         echo "Documentation structure verified successfully!"  
