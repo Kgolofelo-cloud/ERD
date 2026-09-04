@@ -34,7 +34,6 @@ This repository contains the Part 1 planning documentation and database schema.
 
 ![CI/CD Build Status](./docs/cicd-success.png)
 
-*(Note to student: Save your green checkmark screenshot as 'cicd-success.png' in the /docs folder so it displays here)*
  
 ## Video Presentation
 
