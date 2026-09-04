@@ -37,5 +37,5 @@ This repository contains the Part 1 planning documentation and database schema.
  
 ## Video Presentation
 
-[Insert Unlisted YouTube Video Link Here]
+youtube link:https://youtu.be/8_we0YGlCs0?si=jwb_aKJjk2PMU0ZN
  
